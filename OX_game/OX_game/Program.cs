@@ -10,7 +10,8 @@
             Monster algo = new Monster();
             algo2.game = algo1;
             algo.game = algo1;
-            algo.MonsterBasePosition(tab);
+            algo2.monster = algo;
+            algo.MonsterSpawn(tab);
             algo2.HeroSpawn(tab);
             algo2.ControlHero(tab);
             algo1.CreateTab();

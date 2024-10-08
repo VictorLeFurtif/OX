@@ -7,10 +7,11 @@ namespace OX_game
 {
     public class Hero
     {
-        public string hero = "x";
         public Game game;
+        public Monster monster;
         public int x1 = 9;
         public int y1 = 47;
+        public string hero = "x";
 
         public void HeroSpawn(string[,] tab)
         {
@@ -109,6 +110,10 @@ namespace OX_game
                DirectionalBot(tab);
                DirectionalLeft(tab);
                DirectionalRight(tab);
+               monster.DirectionalTop(tab);
+               monster.DirectionalBot(tab);
+               monster.DirectionalLeft(tab);
+               monster.DirectionalRight(tab);
             }
         }
     }
