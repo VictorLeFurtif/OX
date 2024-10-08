@@ -32,10 +32,6 @@ namespace OX_game
                 }
                
             }
-            
-
-            
-
             return tab;
         }
     }
