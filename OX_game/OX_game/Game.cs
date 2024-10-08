@@ -6,6 +6,7 @@ namespace OX_game
     {
         public void ReDraw(string[,]tab)
         {
+            Console.Clear();
             for (int x = 0; x < tab.GetLength(0); x++)
             {
                 for (int y = 0; y < tab.GetLength(1); y++)
