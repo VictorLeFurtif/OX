@@ -1,3 +1,4 @@
+using System;
 using System.Net.Sockets;
 
 namespace OX_game
@@ -8,6 +9,9 @@ namespace OX_game
 
         public void HeroSpawn(string[,]tab)
         {
+            hero = tab[9, 47];
+            
+            
             
         }
         
