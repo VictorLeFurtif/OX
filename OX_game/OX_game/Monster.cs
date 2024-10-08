@@ -1,3 +1,4 @@
+using System;
 using System.Xml;
 
 namespace OX_game
@@ -5,21 +6,29 @@ namespace OX_game
     public class Monster
     {
         public string monster = "o";
+        public Game game;
         
         public void MonsterBasePosition(string [,] tab)
         {
-            for (int i = 7; i < tab.GetLength(0); i++)
-            {
-                for (int j = 8; j < tab.GetLength(1); j++)
-                {
-                    tab[i, j] = monster;
-                }
-            }
+            tab[9, 47] = monster; 
+            game.ReDraw(tab);
+
         }
         
-        public void MonsterMovement()
+        public void MonsterMovement(string[,]tab)
         {
-           
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    if (Console.ReadKey(true).Key == ConsoleKey.Z)
+                    { 
+                        tab[9, 48] = monster;
+                        Console.Clear();
+                        game.ReDraw(tab);
+                    }
+                }
+            }
         }
     }
 }
