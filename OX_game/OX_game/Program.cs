@@ -5,7 +5,9 @@
         public static void Main(string[] args)
         {
             Game algo1 = new Game();
-            algo1.CreateTab();
+            string[,]tab = algo1.CreateTab();
+            Hero algo2 = new Hero();
+            algo2.HeroSpawn(tab);
         }
     }
 }

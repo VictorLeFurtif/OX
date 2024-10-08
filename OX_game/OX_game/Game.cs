@@ -4,7 +4,7 @@ namespace OX_game
 {
     public class Game
     {
-        public void CreateTab()
+        public string[,] CreateTab()
         {
             string[,] tab = new String[10, 50];
 
@@ -29,6 +29,8 @@ namespace OX_game
                 }
 
             }
+
+            return tab;
         }
     }
 }
