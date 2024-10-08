@@ -13,6 +13,7 @@
             algo2.monster = algo;
             algo.MonsterSpawn(tab);
             algo2.HeroSpawn(tab);
+            algo2.Die();
             algo2.ControlHero(tab);
             algo1.CreateTab();
         }

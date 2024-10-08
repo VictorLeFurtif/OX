@@ -116,6 +116,15 @@ namespace OX_game
                monster.DirectionalRight(tab);
             }
         }
+
+        public void Die()
+        {
+            if (x1 == monster.x2 && y1 == monster.y2)
+            {
+                Console.WriteLine("Le chasseur à gagné");
+            }
+        }
     }
+    
         
 }
