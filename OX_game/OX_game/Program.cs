@@ -9,6 +9,7 @@
             Hero algo2 = new Hero();
             algo2.game = algo1;
             algo2.HeroSpawn(tab);
+            algo2.ControlHero(tab);
         }
     }
 }
