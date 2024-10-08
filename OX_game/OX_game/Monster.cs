@@ -23,7 +23,6 @@ namespace OX_game
                     { 
                         tab[2, 6] = monster;
                         Console.Clear();
-                        game.ReDraw(tab);
                     }
                 }
             }
