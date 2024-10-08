@@ -1,0 +1,6 @@
+C:\Users\s.denimal\Documents\GitHub\OX\OX_game\OX_game\obj\Debug\OX_game.csproj.AssemblyReference.cache
+C:\Users\s.denimal\Documents\GitHub\OX\OX_game\OX_game\obj\Debug\OX_game.csproj.CoreCompileInputs.cache
+C:\Users\s.denimal\Documents\GitHub\OX\OX_game\OX_game\bin\Debug\OX_game.exe
+C:\Users\s.denimal\Documents\GitHub\OX\OX_game\OX_game\bin\Debug\OX_game.pdb
+C:\Users\s.denimal\Documents\GitHub\OX\OX_game\OX_game\obj\Debug\OX_game.exe
+C:\Users\s.denimal\Documents\GitHub\OX\OX_game\OX_game\obj\Debug\OX_game.pdb
