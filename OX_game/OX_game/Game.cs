@@ -32,7 +32,7 @@ namespace OX_game
                 }
                
             }
-            ReDraw(tab);
+            
 
             
 
