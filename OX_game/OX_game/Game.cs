@@ -1,6 +1,6 @@
 namespace OX_game
 {
-    public class Game
+    public class MapGame
     {
         
     }
