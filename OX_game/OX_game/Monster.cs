@@ -10,9 +10,7 @@ namespace OX_game
         
         public void MonsterBasePosition(string [,] tab)
         {
-            tab[9, 47] = monster; 
-            game.ReDraw(tab);
-
+            tab[2, 5] = monster; 
         }
         
         public void MonsterMovement(string[,]tab)
@@ -21,9 +19,9 @@ namespace OX_game
             {
                 if (Console.KeyAvailable)
                 {
-                    if (Console.ReadKey(true).Key == ConsoleKey.Z)
+                    if (Console.ReadKey(true).Key == ConsoleKey.UpArrow)
                     { 
-                        tab[9, 48] = monster;
+                        tab[2, 6] = monster;
                         Console.Clear();
                         game.ReDraw(tab);
                     }
