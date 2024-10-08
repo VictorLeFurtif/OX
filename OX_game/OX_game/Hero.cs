@@ -18,25 +18,34 @@ namespace OX_game
             game.ReDraw(tab);
         }
 
+        public void DirectionalTop(string[,] tab)
+        {
+            if (Console.KeyAvailable)
+            {
+                if (Console.ReadKey(true).Key == ConsoleKey.Z)
+                {
+                    if (x1 == 0)
+                    {
+                        Console.WriteLine("00000000");
+                        return;
+                    }
+
+                    tab[x1, y1] = "_";
+                    x1--;
+                    tab[x1, y1] = hero;
+                    game.ReDraw(tab);
+                        
+                }
+                    
+            }
+        }
         public void ControlHero(string[,] tab)
         {
             while (true)
             {
-                if (Console.KeyAvailable)
-                {
-                    if (Console.ReadKey(true).Key == ConsoleKey.Z)
-                    {
-                        if (x1 == tab.GetLength(0) - 1)
-                        {
-                            return;
-                        }
-
-                        tab[x1, y1] = "_";
-                        x1++;
-                        tab[x1, y1] = hero;
-                    }
-                }
+               DirectionalTop(tab); 
             }
         }
     }
+        
 }
