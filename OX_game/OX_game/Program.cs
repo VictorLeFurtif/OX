@@ -12,6 +12,7 @@
             algo.game = algo1;
             algo.MonsterBasePosition(tab);
             algo2.HeroSpawn(tab);
+            algo2.ControlHero(tab);
             algo1.CreateTab();
         }
     }
